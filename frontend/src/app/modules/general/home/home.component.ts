@@ -14,11 +14,11 @@ export class HomeComponent {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
-  user_name = environment.constant.user_name;
-  user_skill = environment.constant.user_skill;
-  user_bio0 = environment.constant.user_bio0;
-  user_bio1 = environment.constant.user_bio1;
-  user_mask = environment.constant.user_mask;
+  user_name = environment.constant.user.user_name;
+  user_skill = environment.constant.user.user_skill;
+  user_bio0 = environment.constant.user.user_bio0;
+  user_bio1 = environment.constant.user.user_bio1;
+  user_mask = environment.constant.user.user_mask;
 
   is_signin = false;
   signin_link = '/login';

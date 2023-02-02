@@ -3,6 +3,7 @@ import { PLATFORM_ID } from '@angular/core';
 
 import { Quote } from './quote';
 
+import { environment } from '../../../../environments/environment';
 import { SeoService } from '../../../services/seo/seo.service';
 import { Feature } from './feature';
 import { Dependency } from './dependency';
@@ -18,6 +19,10 @@ export class AboutComponent implements OnInit {
   features: Feature;
   quote: Quote;
   id: number;
+
+  user_name = environment.constant.user.user_name;
+  user_skill = environment.constant.user.user_skill;
+  user_email = environment.constant.user.user_email;
 
   constructor(
     private seoService: SeoService,
@@ -117,23 +122,22 @@ export class AboutComponent implements OnInit {
     this.loadQuote();
 
     const content =
-      'Cette application a été développée avec Angular version 15.0.4 et bootstrap 5.2.3' +
-      ' Elle applique le Routing, le Lazy loading, le Server side rendering et les Progressive Web App (PWA)';
+      'This app was developed with Angular version 15.0.4 and bootstrap 5.2.3' +
+      ' It applies Routing, Lazy loading, Server side rendering and Progressive Web App (PWA)';
 
-    const title = 'angular-starter Title : About Page';
+    const title = 'About us : About Page';
 
     this.seoService.setMetaDescription(content);
     this.seoService.setMetaTitle(title);
-
   }
 
 
   loadQuote() {
     const quotes = [
       {
-        name: 'Lawrence of Arabia',
-        title: 'There is nothing in the desert and no man needs nothing',
-        link: 'https://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)'
+        name: 'Jason Segel',
+        title: 'Life is too short to worry about money.',
+        link: 'https://en.wikipedia.org/wiki/Jason_Segel'
       },
       {
         name: 'Alien Prometheus',
@@ -141,9 +145,9 @@ export class AboutComponent implements OnInit {
         link: 'https://en.wikipedia.org/wiki/Prometheus_(2012_film)'
       },
       {
-        name: 'Blade Runner',
-        title: 'All those moments will be lost in time... like tears in rain... Time to die.',
-        link: 'https://en.wikipedia.org/wiki/Blade_Runner'
+        name: 'Jason Segel',
+        title: 'Strength does not come from physical capacity. It comes from an indomitable will.',
+        link: 'https://en.wikipedia.org/wiki/Jason_Segel'
       },
     ];
     const index = quotes.length;

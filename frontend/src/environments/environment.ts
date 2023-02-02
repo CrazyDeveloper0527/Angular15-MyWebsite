@@ -10,11 +10,16 @@ export const environment = {
 
   constant:
   {
-    user_name: "Angular 15",
-    user_skill: "Personal Website",
-    user_bio0: "This is an dedicated web developer with rich experience.",
-    user_bio1: "Full Stack Developer with 7+ years of experience building high-quality websites, applications and databases for reputable brands.",
-    user_mask: "./assets/params/images/home/profile.jpg"
+    user:
+    {
+      user_name: "Crazy Developer",
+      user_email: "topstack123@gmail.com",
+      user_skill: "MEAN | MERN | ETC..",
+      user_bio0: "This is an dedicated web developer with rich experience.",
+      user_bio1: "Full Stack Developer with 7+ years of experience building high-quality websites, applications and databases for reputable brands.",
+      user_mask: "./assets/params/images/home/profile.jpg",
+    }
+
   },
 
   urlNews: './assets/params/json/mock/trailers.json',
