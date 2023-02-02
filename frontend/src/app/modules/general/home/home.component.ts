@@ -14,96 +14,57 @@ export class HomeComponent {
   bootstrap = environment.application.bootstrap;
   fontawesome = environment.application.fontawesome;
 
+  user_name = environment.constant.user_name;
+  user_skill = environment.constant.user_skill;
+  user_bio0 = environment.constant.user_bio0;
+  user_bio1 = environment.constant.user_bio1;
+  user_mask = environment.constant.user_mask;
+
   items = [
     {
-      icon: "fa-solid fa-file-lines",
-      name: "Landing Page",
-      description: "Css linear-gradient",
-      link:'/landing-page'
+      link: '/mean',
+      icon: 'fa-angular',
+      title: 'MEAN',
+      disc: '6+ years of rich experience and built 22 websites'
     },
     {
-      icon: "fa-solid fa-address-card",
-      name: "Images Cards",
-      description: "Cascade Cards",
-      link:'/cards'
+      link: '/mern',
+      icon: 'fa-react',
+      title: 'MERN',
+      disc: '4+ years of enough experience and built 17 websites'
     },
     {
-      icon: "fa-brands fa-bootstrap",
-      name: "bootstrap",
-      description: "UI and components",
-      link:'/bootstrap'
+      link: '/shopify',
+      icon: 'fa-shopify',
+      title: 'Shopify',
+      disc: '2+ years of experience and built 10 shopify stores'
     },
     {
-      icon: "fa-sharp fa-solid fa-newspaper",
-      name: "News",
-      description: "Trailers and youtube",
-      link:'/news'
+      link: '/blockchain',
+      icon: 'fa-vuejs',
+      title: 'Blockchain',
+      disc: '4+ years of enough experience in Solidity and Rust'
     },
     {
-      icon: "fa-solid fa-chart-simple",
-      name: "Boxoffice",
-      description: "Movies boxoffice",
-      link:'/boxoffice'
+      link: '/mobile',
+      icon: 'fa-android',
+      title: 'Mobile',
+      disc: '2+ years of Android, iOS, Fultter and React Native'
     },
     {
-      icon: "fa-brands fa-readme",
-      name: "CRUD",
-      description: "Create Read Update",
-      link:'/crud'
+      link: '/grafana',
+      icon: 'fa-algolia',
+      title: 'Grafana+MongoDB',
+      disc: 'rich experience with MongoDB resource in Grafana'
     },
     {
-      icon: "fa-solid fa-blender-phone",
-      name: "Services",
-      description: "angular Services",
-      link:'/services'
-    },
-    {
-      icon: "fa-solid fa-screwdriver-wrench",
-      name: "Components",
-      description: "Angular components",
-      link:'/components'
-    },
-    {
-      icon: "fa-solid fa-network-wired",
-      name: "HttpClient",
-      description: "Httpclient library",
-      link:'/httpclient'
-    },
-    {
-      icon: "fa-regular fa-rectangle-list",
-      name: "forms",
-      description: "Reactive & Template",
-      link:'/forms'
-    },
-    {
-      icon: "fa-regular fa-window-restore",
-      name: "Modal",
-      description: "Modal with bootstrap",
-      link:'/modal'
-    },
-    {
-      icon: "fa-solid fa-spell-check",
-      name: "Prism",
-      description: "Syntax highlighter,",
-      link:'/prism'
-    },
+      link: '/java',
+      icon: 'fa-java',
+      title: 'C/C++/Java',
+      disc: '2+ years of software development with C/C++/JAVA'
+    }
   ]
 
   constructor(private seoService: SeoService) {
-
-
-
-
-    const content =
-      'This application was developed with ' + this.angular + ' and ' + this.bootstrap +
-      ' It applies Routing, Lazy loading and Progressive Web App (PWA)';
-
-    const title = 'angular-starter Title : Home Page';
-
-    this.seoService.setMetaDescription(content);
-    this.seoService.setMetaTitle(title);
-
-
   }
-
 }
