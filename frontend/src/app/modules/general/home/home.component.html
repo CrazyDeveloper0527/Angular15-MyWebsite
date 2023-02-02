@@ -33,7 +33,7 @@
     <div class="row g-4 py-2 row-cols-1 row-cols-md-2 row-cols-lg-4">
       <div class="col" *ngFor="let item of items; let i = index">
         <div class="nga-card-step p-4">
-          <a routerLink="{{ item.link }}">
+          <a routerLink="{{ is_signin ? item.link : signin_link }}">
             <i class="text-primary fab {{ item.icon }} fa-2x mb-2"></i>
             <h3 class="h4 text-primary fw-bold">{{ item.title }}</h3>
             <p>{{ item.disc }}</p>

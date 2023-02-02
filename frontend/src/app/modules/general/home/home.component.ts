@@ -20,6 +20,9 @@ export class HomeComponent {
   user_bio1 = environment.constant.user_bio1;
   user_mask = environment.constant.user_mask;
 
+  is_signin = false;
+  signin_link = '/login';
+
   items = [
     {
       link: '/mean',
