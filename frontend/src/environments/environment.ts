@@ -7,6 +7,16 @@ export const environment = {
     bootstrap: 'Bootstrap 5.2.3',
     fontawesome: 'Font Awesome 6.2.1',
   },
+
+  constant:
+  {
+    user_name: "Angular 15",
+    user_skill: "Personal Website",
+    user_bio0: "This is an dedicated web developer with rich experience.",
+    user_bio1: "Full Stack Developer with 7+ years of experience building high-quality websites, applications and databases for reputable brands.",
+    user_mask: "./assets/params/images/home/profile.jpg"
+  },
+
   urlNews: './assets/params/json/mock/trailers.json',
   urlMovies: './assets/params/json/mock/movies.json',
 
