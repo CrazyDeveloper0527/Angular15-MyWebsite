@@ -20,48 +20,48 @@ export class HomeComponent {
   user_bio1 = environment.constant.user.user_bio1;
   user_mask = environment.constant.user.user_mask;
 
-  is_signin = false;
+  is_signin = true;
   signin_link = '/login';
 
   items = [
     {
-      link: '/mean',
+      link: '/cards',
       icon: 'fa-angular',
       title: 'MEAN',
       disc: '6+ years of rich experience and built 22 websites'
     },
     {
-      link: '/mern',
+      link: '/cards',
       icon: 'fa-react',
       title: 'MERN',
       disc: '4+ years of enough experience and built 17 websites'
     },
     {
-      link: '/shopify',
+      link: '/cards',
       icon: 'fa-shopify',
       title: 'Shopify',
       disc: '2+ years of experience and built 10 shopify stores'
     },
     {
-      link: '/blockchain',
+      link: '/cards',
       icon: 'fa-vuejs',
       title: 'Blockchain',
       disc: '4+ years of enough experience in Solidity and Rust'
     },
     {
-      link: '/mobile',
+      link: '/cards',
       icon: 'fa-android',
       title: 'Mobile',
       disc: '2+ years of Android, iOS, Fultter and React Native'
     },
     {
-      link: '/grafana',
+      link: '/cards',
       icon: 'fa-algolia',
       title: 'Grafana+MongoDB',
       disc: 'rich experience with MongoDB resource in Grafana'
     },
     {
-      link: '/java',
+      link: '/cards',
       icon: 'fa-java',
       title: 'C/C++/Java',
       disc: '2+ years of software development with C/C++/JAVA'
